@@ -5,9 +5,10 @@
 body {
     font-family: Poppins;
     font-weight: 500;
+    color: #544837;
     font-size: 16px;
     line-height: 26px;
-    color: #544837;
+    background-color: #fff;
 }
 
 button {
@@ -465,7 +466,7 @@ button {
     margin-bottom: 35px;
     font-size: 20px;
     line-height: 30px;
-    font-weight: 400;
+    font-weight: 500;
 }
 
 .footer__list {
@@ -482,8 +483,6 @@ button {
 .footer__form {
     width: 330px;
 }
-
-
 
 .footer__form-input {
     height: 48px;
@@ -507,4 +506,39 @@ button {
     color: #fff;
     padding: 8px 15px 7px;
     border: none;
+}
+
+.menu__btn {
+    width: 40px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+    position: relative;
+}
+
+.menu__btn span{
+    display: block;
+    height: 2px;
+    width: 100%;
+    background-color: #000;
+}
+
+.menu__btn::after,
+.menu__btn::before{
+    content: '';
+    position: absolute;
+    width: 40px;
+    height: 2px;
+    background-color: #000;
+    left: 0;
+}
+
+.menu__btn::after {
+    top: 0px;
+}
+
+.menu__btn::before{
+    bottom: 0;
 }
